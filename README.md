@@ -10,11 +10,29 @@ Layanan server yang sudah berhasil diinstall
 1. OpenSSH ( 30 November 2024)
 2. Apache2 ( 30 November 2024)
 
-
-Langkah-langkah menginstall LAMP
+Langkah-langkah menginstall OpenSSH
 1. Update
 ```bash
-"sudo apt update && upgrade -y"
+sudo apt update
+```
+2.Meninstall OpenSSH
+```bash
+sudo apt install openssh-server
+```
+3. Mengecheck Status SSH
+```bash
+sudo systemctl status ssh
+```
+4. Menghidupkan Port 22
+```bash
+sudo systemctl enable
+```
+
+
+Langkah-langkah menginstall Apache2
+1. Update
+```bash
+sudo apt update && upgrade -y
 ```
 2. Menginstall Apache2
 ```bash

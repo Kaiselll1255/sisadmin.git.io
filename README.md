@@ -7,9 +7,8 @@ OS : Ubuntu Server 22.04.5 LTS
 
 
 Layanan server yang sudah berhasil diinstall
-1. OpenSSH
-2. Apache2
-3. Mysql
+1. OpenSSH ( 30 November 2024)
+2. Apache2 ( 30 November 2024)
 
 
 Langkah-langkah menginstall LAMP

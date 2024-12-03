@@ -9,6 +9,8 @@ OS : Ubuntu Server 22.04.5 LTS
 Layanan server yang sudah berhasil diinstall
 1. OpenSSH ( 30 November 2024)
 2. Apache2 ( 30 November 2024)
+3. Mysql ( 03 Desember 2024)
+4. PHP ( 03 Desember 2024)
 
 Langkah-langkah menginstall OpenSSH
 1. Update

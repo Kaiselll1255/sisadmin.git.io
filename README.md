@@ -11,6 +11,7 @@ Layanan server yang sudah berhasil diinstall
 2. Apache2 ( 30 November 2024)
 3. Mysql ( 03 Desember 2024)
 4. PHP ( 03 Desember 2024)
+5. Grafana ( 12 Desember 2024)
 
 Langkah-langkah menginstall OpenSSH
 1. Update
@@ -131,3 +132,33 @@ http://localhost/index.php / http://IP_Address/index.php
 ```
 ![image](https://github.com/user-attachments/assets/4bb0260a-9ec2-49fa-92b4-1dbd598624bb)
 Contoh apabila sudah berhasil terinstall
+
+Langkah-langkah Menginstall Grafana
+1. Download Grafana GPG key
+   ```bash
+   wget -q -O - https://packages.grafana.com/gpg.key | gpg --dearmor | sudo tee /usr/share/keyrings/grafana.gpg > /dev/null
+   ```
+2. Menambahkan Repository Grafana
+   ```bash
+   echo "deb [signed-by=/usr/share/keyrings/grafana.gpg] https://packages.grafana.com/oss/deb stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+   ```
+3. Update Sistem
+   ```bash
+   sudo apt update
+   ```
+4. Menginstall Grafana
+   ```bash
+   sudo apt install grafana
+   ```
+5. Menghidupkan Grafana
+   ```bash
+   sudo systemctl start grafana-server
+   ```
+6. Mengecek Status Grafana
+   ```bash
+   sudo systemctl status grafana-server
+   ```
+   Maka akan muncul Output seperti Berikut
+   ![image](https://github.com/user-attachments/assets/812e6a48-e4d7-45a3-af30-90e3bfd12cc7)
+   Yang menandakan apabila grafana sudah berhasil Hidup
+

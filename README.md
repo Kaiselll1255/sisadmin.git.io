@@ -13,6 +13,7 @@ Layanan server yang sudah berhasil diinstall
 4. PHP ( 03 Desember 2024)
 5. Grafana ( 12 Desember 2024)
 6. Prometheus (16 Desember 2024 )
+7. Netdata (16 Desember 2024)
 
 Langkah-langkah menginstall OpenSSH
 1. Update
@@ -289,5 +290,19 @@ sudo systemctl status prometheus
 ```
 Ouputnya :
 ![image](https://github.com/user-attachments/assets/fc8d7ab5-faaf-44b5-9d93-cc0869bdb9ce)
+
+Langkah-langkah Menginstall Netdata
+1. Sudo apt update
+```bash
+sudo apt update
+```
+2. Menginstall netdata
+```bash
+sudo apt install netdata
+```
+3. Mengecek Status Netdata
+```bash
+sudo systemctl status netdata
+```
 
 
